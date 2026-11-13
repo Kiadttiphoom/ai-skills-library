@@ -2,7 +2,7 @@
   "name": "dotnet-msbuild",
   "version": "0.1.4",
   "description": "Comprehensive MSBuild and .NET build skills: failure diagnosis, performance optimization, code quality, and modernization.",
-  "skills": ["./skills/"],
+  "skills": [],
   "agents": [
     "./agents/build-perf.agent.md",
     "./agents/msbuild-code-review.agent.md",
