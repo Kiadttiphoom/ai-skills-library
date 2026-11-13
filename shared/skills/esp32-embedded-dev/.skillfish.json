@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "esp32-embedded-dev",
+  "owner": "shengdabai",
+  "repo": "tony-claude-code-skills",
+  "path": "skills/_collections/dot_claude/skills/esp32-embedded-dev",
+  "branch": "main",
+  "sha": "783f511cafc844b29e701b921f59c944573f282d",
+  "source": "manual"
+}
