@@ -1,4 +1,4 @@
-# my-skills-ai
+# ai-skills-library
 
 A collection of AI skills for Codex, Gemini, and other AI tools. Open a SKILL.md link to read the instructions and usage guidance for each skill.
 
