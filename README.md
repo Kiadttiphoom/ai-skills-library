@@ -1,69 +1,69 @@
 # my-skills-ai
 
-คลัง AI skills สำหรับ Codex, Gemini และเครื่องมือ AI อื่น ๆ เปิดลิงก์ SKILL.md เพื่ออ่านคำแนะนำและวิธีใช้งานแต่ละ skill
+A collection of AI skills for Codex, Gemini, and other AI tools. Open a SKILL.md link to read the instructions and usage guidance for each skill.
 
-## โครงสร้าง
+## Repository Structure
 
-- `shared/skills/` — เก็บ skills ทั้งหมดไว้ส่วนกลาง รวม skill ย่อยและตัวอย่าง
-- `codex/` — เก็บการตั้งค่าและส่วนอื่นของ plugins สำหรับ Codex โดยลบ skills ที่ซ้ำกับ shared แล้ว
-- `gemini/` — เก็บส่วนอื่นของ plugins สำหรับ Gemini โดยลบ skills ที่ซ้ำกับ shared แล้ว
+- `shared/skills/` — Central library containing all skills, including nested skills and examples.
+- `codex/` — Codex configuration and other plugin files. Duplicate skills have been removed in favor of the shared library.
+- `gemini/` — Other Gemini plugin files. Duplicate skills have been removed in favor of the shared library.
 
-รวม **553 ไฟล์ SKILL.md** ณ วันที่ 13 พฤศจิกายน 2026 นับทุกตำแหน่งภายใน shared รวม skill ย่อยและตัวอย่าง คำอธิบายอ้างอิงจากแต่ละไฟล์
+Contains **553 SKILL.md files** as of November 13, 2026. This count includes all locations within shared, including nested skills and examples. Descriptions are based on the individual skill files.
 
-ลบสำเนา skills จาก codex 96 ชุด และ gemini 96 ชุด โดยเก็บต้นฉบับและไฟล์ประกอบใน shared ไว้ทั้งหมด รายการ skills ใน plugin manifests ของสองแพลตฟอร์มจึงเป็นรายการว่าง การใช้งาน skills ให้เลือกจาก shared/skills ตามรายการด้านล่าง
+The 96 duplicate skill folders in codex and 96 in gemini have been removed. All original skills and supporting files remain in shared. The skill lists in the platform plugin manifests are empty; browse shared/skills using the catalog below.
 
-| โฟลเดอร์ | จำนวน |
+| Directory | Count |
 | --- | ---: |
 | shared | 553 |
 
-## Skills ใน shared (553 ไฟล์)
+## Shared Skills (553 Files)
 
-แยกตามภาษา Framework และลักษณะงาน แต่ละ skill อยู่ในหมวดหลักเพียงหมวดเดียว โดยคงชื่อ คำอธิบาย และลิงก์เดิมไว้ครบ หมวด Python รวมเครื่องมือและไลบรารีที่เกี่ยวข้อง ส่วนงานวิเคราะห์ข้อมูลและ AI แยกตามประเภทงาน
+Skills are grouped by language, framework, and task. Each skill appears in one primary category, with its name and file link preserved. The Python category includes related tools and libraries; data analysis and AI skills are grouped by task.
 
-### สารบัญหมวด
+### Category Index
 
-| หมวด | จำนวน |
+| Category | Count |
 | --- | ---: |
 | [Go / Golang](#skills-go) | 1 |
 | [Next.js](#skills-nextjs) | 6 |
 | [.NET / C# / ASP.NET / Blazor / MAUI](#skills-dotnet) | 85 |
-| [Python และเครื่องมือในระบบนิเวศ Python](#skills-python) | 4 |
-| [จัดหน้า UI — Layout, Responsive และ Components](#skills-ui-layout) | 5 |
-| [ออกแบบ UI/UX — สี ฟอนต์ และ Design System](#skills-ui-design) | 10 |
+| [Python and Ecosystem Tools](#skills-python) | 4 |
+| [UI Layout, Responsive Design, and Components](#skills-ui-layout) | 5 |
+| [UI/UX Design, Colors, Typography, and Design Systems](#skills-ui-design) | 10 |
 | [React](#skills-react) | 2 |
 | [Vue.js](#skills-vue) | 8 |
 | [Dart / Flutter](#skills-dart-flutter) | 33 |
 | [Node.js / NestJS](#skills-nodejs) | 2 |
-| [สร้างเว็บไซต์ / CMS / SEO / Email](#skills-web) | 7 |
+| [Website Building / CMS / SEO / Email](#skills-web) | 7 |
 | [Vercel / Deploy / Cloud / Monitoring](#skills-cloud) | 30 |
 | [AI / LLM / Agents](#skills-ai) | 15 |
-| [ฐานข้อมูล / SQL](#skills-database) | 5 |
-| [ออกแบบระบบซอฟต์แวร์](#skills-system-design) | 23 |
-| [ทดสอบ / Debug / Code Review](#skills-testing) | 24 |
+| [Databases / SQL](#skills-database) | 5 |
+| [Software System Design](#skills-system-design) | 23 |
+| [Testing / Debugging / Code Review](#skills-testing) | 24 |
 | [Security / Privacy](#skills-security) | 15 |
 | [Embedded / ESP32 / IoT / MQTT](#skills-iot) | 7 |
-| [สถาปัตยกรรมอาคาร / วิศวกรรม / BIM](#skills-architecture) | 35 |
-| [วิเคราะห์ข้อมูล / Dashboard / สถิติ](#skills-analytics) | 34 |
-| [เอกสาร / PDF / Excel / Slides / Templates](#skills-documents) | 29 |
-| [ภาพ / วิดีโอ / กราฟิก](#skills-media) | 10 |
-| [ธุรกิจ / Commerce / Payments](#skills-commerce) | 6 |
-| [Git / GitHub / Browser / เครื่องมือทำงาน](#skills-tools) | 23 |
-| [สร้างและจัดการ Skills / Plugins / Workflows](#skills-skills-plugins) | 26 |
-| [การเทรด / ตลาด / กลยุทธ์ / ความเสี่ยง](#skills-trading) | 108 |
+| [Building Architecture / Engineering / BIM](#skills-architecture) | 35 |
+| [Data Analysis / Dashboards / Statistics](#skills-analytics) | 34 |
+| [Documents / PDF / Excel / Slides / Templates](#skills-documents) | 29 |
+| [Images / Video / Graphics](#skills-media) | 10 |
+| [Business / Commerce / Payments](#skills-commerce) | 6 |
+| [Git / GitHub / Browser / Productivity Tools](#skills-tools) | 23 |
+| [Skill and Plugin Development / Management / Workflows](#skills-skills-plugins) | 26 |
+| [Trading / Markets / Strategies / Risk](#skills-trading) | 108 |
 
 <a id="skills-go"></a>
 
-### Go / Golang (1 ไฟล์)
+### Go / Golang (1 File)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | golang | Write and review Go: idioms, error handling, concurrency, testing, project structure, the toolchain, and the language version a module's `go` directive permits. | [shared/skills/golang/SKILL.md](shared/skills/golang/SKILL.md) |
 
 <a id="skills-nextjs"></a>
 
-### Next.js (6 ไฟล์)
+### Next.js (6 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | auth | Authentication integration guidance — Clerk (native Vercel Marketplace), Descope, and Auth0 setup for Next.js applications. Covers middleware auth patterns, sign-in/sign-up flows, and Marketplace provisioning. Use when implementing user authentication. | [shared/skills/nextjs-auth/SKILL.md](shared/skills/nextjs-auth/SKILL.md) |
 | next-cache-components | Next.js 16 Cache Components guidance — PPR, use cache directive, cacheLife, cacheTag, updateTag, and migration from unstable_cache. Use when implementing partial prerendering, caching strategies, or migrating from older Next.js cache patterns. | [shared/skills/nextjs-cache-components/SKILL.md](shared/skills/nextjs-cache-components/SKILL.md) |
@@ -74,9 +74,9 @@
 
 <a id="skills-dotnet"></a>
 
-### .NET / C# / ASP.NET / Blazor / MAUI (85 ไฟล์)
+### .NET / C# / ASP.NET / Blazor / MAUI (85 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | analyzing-dotnet-performance | Scans .NET code for ~50 performance anti-patterns across async, memory, strings, collections, LINQ, regex, serialization, and I/O with tiered severity classification. Use when analyzing .NET code for optimization opportunities, reviewing hot paths, or auditing allocation-heavy patterns. | [shared/skills/dotnet-analyzing-performance/SKILL.md](shared/skills/dotnet-analyzing-performance/SKILL.md) |
 | dotnet-aot-compat | Make .NET projects compatible with Native AOT and trimming by systematically resolving IL trim/AOT analyzer warnings. USE FOR: making projects AOT-compatible, fixing trimming warnings, resolving IL warnings (IL2026, IL2070, IL2067, IL2072, IL3050), adding DynamicallyAccessedMembers annotations, enabling IsAotCompatible. DO NOT USE FOR: publishing native AOT binaries, optimizing binary size, replacing reflection-heavy libraries with alternatives. INVOKES: no tools — pure knowledge skill. | [shared/skills/dotnet-aot-compat/SKILL.md](shared/skills/dotnet-aot-compat/SKILL.md) |
@@ -166,9 +166,9 @@
 
 <a id="skills-python"></a>
 
-### Python และเครื่องมือในระบบนิเวศ Python (4 ไฟล์)
+### Python and Ecosystem Tools (4 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | freqtrade-bot | Freqtrade — open-source Python crypto trading bot. Backtesting, hyperopt (ML parameter optimization), FreqAI (self-training adaptive strategies), Telegram + WebUI control. Supports Binance, Kraken, Bybit, OKX, Gate.io (spot + futures). SQLite trade h | [shared/skills/tradecraft/skills/freqtrade-bot/SKILL.md](shared/skills/tradecraft/skills/freqtrade-bot/SKILL.md) |
 | python-manager-discovery | Environment manager-specific discovery patterns and known issues. Use when working on or reviewing environment discovery code for conda, poetry, pipenv, pyenv, or venv. | [shared/skills/tradecraft/skills/python-manager-discovery/SKILL.md](shared/skills/tradecraft/skills/python-manager-discovery/SKILL.md) |
@@ -177,9 +177,9 @@
 
 <a id="skills-ui-layout"></a>
 
-### จัดหน้า UI — Layout, Responsive และ Components (5 ไฟล์)
+### UI Layout, Responsive Design, and Components (5 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | ai-elements | AI Elements component library guidance — pre-built React components for AI interfaces built on shadcn/ui. Use when building chat UIs, message displays, tool call rendering, streaming responses, reasoning panels, or any AI-native interface with the AI SDK. | [shared/skills/ai-elements/SKILL.md](shared/skills/ai-elements/SKILL.md) |
 | shadcn | shadcn/ui expert guidance — CLI, component installation, composition patterns, custom registries, theming, Tailwind CSS integration, and high-quality interface design. Use when initializing shadcn, adding components, composing product UI, building custom registries, configuring themes, or troubleshooting component issues. | [shared/skills/react-shadcn/SKILL.md](shared/skills/react-shadcn/SKILL.md) |
@@ -189,9 +189,9 @@
 
 <a id="skills-ui-design"></a>
 
-### ออกแบบ UI/UX — สี ฟอนต์ และ Design System (10 ไฟล์)
+### UI/UX Design, Colors, Typography, and Design Systems (10 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | brand | Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides. | [shared/skills/brand/SKILL.md](shared/skills/brand/SKILL.md) |
 | banner-design | Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage. Uses ui-ux-pro-max, frontend-design, ai-artist, ai-multimodal skills. | [shared/skills/design-banner/SKILL.md](shared/skills/design-banner/SKILL.md) |
@@ -206,18 +206,18 @@
 
 <a id="skills-react"></a>
 
-### React (2 ไฟล์)
+### React (2 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | react-best-practices | React best-practices reviewer for TSX files. Triggers after editing multiple TSX components to run a condensed quality checklist covering component structure, hooks usage, accessibility, performance, and TypeScript patterns. | [shared/skills/react-best-practices/SKILL.md](shared/skills/react-best-practices/SKILL.md) |
 | swr | SWR data-fetching expert guidance. Use when building React apps with client-side data fetching, caching, revalidation, mutations, optimistic UI, pagination, or infinite loading using the SWR library. | [shared/skills/react-swr/SKILL.md](shared/skills/react-swr/SKILL.md) |
 
 <a id="skills-vue"></a>
 
-### Vue.js (8 ไฟล์)
+### Vue.js (8 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | create-adaptable-composable | Create a library-grade Vue composable that accepts maybe-reactive inputs (MaybeRef / MaybeRefOrGetter) so callers can pass a plain value, ref, or getter. Normalize inputs with toValue()/toRef() inside reactive effects (watch/watchEffect) to keep behavior predictable and reactive. Use this skill when user asks for creating adaptable or reusable composables. | [shared/skills/create-adaptable-composable/SKILL.md](shared/skills/create-adaptable-composable/SKILL.md) |
 | vue-best-practices | MUST be used for Vue.js tasks. Strongly recommends Composition API with `<script setup>` and TypeScript as the standard approach. Covers Vue 3, SSR, Volar, vue-tsc. Load for any Vue, .vue files, Vue Router, Pinia, or Vite with Vue work. ALWAYS use Composition API unless the project explicitly requires Options API. | [shared/skills/vue-best-practices/SKILL.md](shared/skills/vue-best-practices/SKILL.md) |
@@ -230,9 +230,9 @@
 
 <a id="skills-dart-flutter"></a>
 
-### Dart / Flutter (33 ไฟล์)
+### Dart / Flutter (33 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | dart-add-unit-test | Write and organize unit tests for functions, methods, and classes using `package:test`. Use when creating new logic or fixing bugs to ensure code remains correct and regression-free. | [shared/skills/agent-plugins/skills/dart-add-unit-test/SKILL.md](shared/skills/agent-plugins/skills/dart-add-unit-test/SKILL.md) |
 | dart-build-cli-app | Entrypoint structure, exit codes, cross-platform scripts. Use when building command line utilities, scripts, or applications. | [shared/skills/agent-plugins/skills/dart-build-cli-app/SKILL.md](shared/skills/agent-plugins/skills/dart-build-cli-app/SKILL.md) |
@@ -270,18 +270,18 @@
 
 <a id="skills-nodejs"></a>
 
-### Node.js / NestJS (2 ไฟล์)
+### Node.js / NestJS (2 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | nestjs | Build NestJS the way THIS project's module architecture already does it, not by framework defaults — a reference carrying the real module boundaries and dependency-injection discipline behind thin controllers, class-validator DTOs, TypeORM/Prisma data access, guards, interceptors, pipes, exception filters, BullMQ queues, WebSockets, microservices, OpenAPI, and testing, so a change lands idiomatic and review-ready instead of bypassing the framework. Use when a task touches this project's NestJS modules and should follow its DI-driven architecture rather than framework defaults. | [shared/skills/nestjs-core/SKILL.md](shared/skills/nestjs-core/SKILL.md) |
 | nestjs-patterns | NestJS architecture patterns for modules, controllers, providers, DTO validation, guards, interceptors, config, and production-grade TypeScript backends. Use when building or reviewing a NestJS backend — modules, providers, DTO validation, guards, or interceptors. | [shared/skills/nestjs-patterns/SKILL.md](shared/skills/nestjs-patterns/SKILL.md) |
 
 <a id="skills-web"></a>
 
-### สร้างเว็บไซต์ / CMS / SEO / Email (7 ไฟล์)
+### Website Building / CMS / SEO / Email (7 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | geistdocs | Expert guidance for Geistdocs, Vercel's documentation template built with Next.js and Fumadocs — MDX authoring, configuration, AI chat, i18n, feedback, deployment. Use when creating documentation sites, configuring geistdocs, writing MDX content, or setting up docs infrastructure. | [shared/skills/vercel-geistdocs/SKILL.md](shared/skills/vercel-geistdocs/SKILL.md) |
 | cms | Headless CMS integration guidance — Sanity (native Vercel Marketplace), Contentful, DatoCMS, Storyblok, and Builder.io. Covers studio setup, content modeling, preview mode, revalidation webhooks, and Visual Editing. Use when building content-driven sites with a headless CMS on Vercel. | [shared/skills/web-cms/SKILL.md](shared/skills/web-cms/SKILL.md) |
@@ -293,9 +293,9 @@
 
 <a id="skills-cloud"></a>
 
-### Vercel / Deploy / Cloud / Monitoring (30 ไฟล์)
+### Vercel / Deploy / Cloud / Monitoring (30 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | monitoring-expert | Configures monitoring systems, implements structured logging pipelines, creates Prometheus/Grafana dashboards, defines alerting rules, and instruments distributed tracing. Implements Prometheus/Grafana stacks, conducts load testing, performs application profiling, and plans infrastructure capacity. Use when setting up application monitoring, adding observability to services, debugging production issues with logs/metrics/traces, running load tests with k6 or Artillery, profiling CPU/memory bottlenecks, or forecasting capacity needs. | [shared/skills/devops-monitoring-expert/SKILL.md](shared/skills/devops-monitoring-expert/SKILL.md) |
 | vercel-agent | Vercel Agent guidance — AI-powered code review, incident investigation, and SDK installation. Automates PR analysis and anomaly debugging. Use when configuring or understanding Vercel's AI development tools. | [shared/skills/vercel-agent/SKILL.md](shared/skills/vercel-agent/SKILL.md) |
@@ -330,9 +330,9 @@
 
 <a id="skills-ai"></a>
 
-### AI / LLM / Agents (15 ไฟล์)
+### AI / LLM / Agents (15 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | openai-docs | Use when the user asks how to build with OpenAI products or APIs, asks about Codex itself or choosing Codex surfaces, needs up-to-date official documentation with citations, help choosing the latest model for a use case, latest/current/default-model prompting guidance, or model upgrade and prompt-upgrade guidance; use OpenAI docs MCP tools for non-Codex docs questions, use the Codex manual helper first for broad Codex self-knowledge, and restrict fallback browsing to official OpenAI domains. | [shared/skills/.system/openai-docs/SKILL.md](shared/skills/.system/openai-docs/SKILL.md) |
 | eve | Build durable AI agents and agent-powered applications with the eve framework. Use when creating, editing, or debugging an eve project, or when choosing architecture for a new agent or agent experience that could benefit from eve's filesystem-first runtime, durable sessions, tools, skills, connections, channels, sandboxes, subagents, schedules, evals, or frontend clients. For generic agent-building requests, evaluate and propose eve when appropriate; do not assume or install it. Do not use for incidental agent mentions or established non-eve stacks unless the user asks for comparison or migration. | [shared/skills/agent-eve/SKILL.md](shared/skills/agent-eve/SKILL.md) |
@@ -352,9 +352,9 @@
 
 <a id="skills-database"></a>
 
-### ฐานข้อมูล / SQL (5 ไฟล์)
+### Databases / SQL (5 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | database-design | Language-agnostic enterprise database design and data modeling architecture. Covers Domain-Driven Design (DDD), conceptual/logical/physical ERD modeling, relational normalization (3NF/BCNF), NoSQL document modeling, indexing strategy, partitioning/sharding, security, audit trails, and concurrency control. Use when designing complex, scalable, production-ready database schemas for any tech stack. | [shared/skills/database-design/SKILL.md](shared/skills/database-design/SKILL.md) |
 | postgresql-design | PostgreSQL database schema design, advanced data modeling, indexing strategies (B-Tree, GIN, GiST, BRIN), JSONB modeling, UUIDv7 primary keys, Table Partitioning, Row-Level Security (RLS) for multi-tenancy, and query optimization. Use when designing, reviewing, or optimizing PostgreSQL databases. | [shared/skills/postgres-design/SKILL.md](shared/skills/postgres-design/SKILL.md) |
@@ -364,9 +364,9 @@
 
 <a id="skills-system-design"></a>
 
-### ออกแบบระบบซอฟต์แวร์ (23 ไฟล์)
+### Software System Design (23 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | api-design | This skill should be used when the user needs to "design the API", do "endpoint design", pin down a "request/response shape", choose a "pagination" strategy (cursor vs offset), add an "idempotency key" to a write, plan "API versioning", an "error contract", or pick between "REST vs gRPC vs GraphQL" or "WebSocket vs polling". Use it whenever a design has reached the interface — the concrete request, response, primary access path, and how clients page, retry, and version — even if the user only said "the boxes talk to each other". | [shared/skills/systemdesign-api-design/SKILL.md](shared/skills/systemdesign-api-design/SKILL.md) |
 | back-of-the-envelope | This skill should be used when the user needs to "estimate QPS", "back-of-the-envelope" (BOTEC) numbers, "how much storage / bandwidth", "how many servers", "peak load", "capacity planning", or wants the standard latency / throughput / availability numbers to ground a design (latency table, QPS rates, powers of two, nines). Use it whenever a design decision hinges on scale — convert any "high traffic" / "huge data" phrase into concrete numbers before choosing components, even if the user doesn't say "estimate". | [shared/skills/systemdesign-back-of-the-envelope/SKILL.md](shared/skills/systemdesign-back-of-the-envelope/SKILL.md) |
@@ -394,9 +394,9 @@
 
 <a id="skills-testing"></a>
 
-### ทดสอบ / Debug / Code Review (24 ไฟล์)
+### Testing / Debugging / Code Review (24 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | review-agent | Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions. | [shared/skills/.system/review-agent/SKILL.md](shared/skills/.system/review-agent/SKILL.md) |
 | api-review | Reviews the specified code against the canonical API Design guidelines. Use this skill when the user asks for an API review or to check code against API design principles. | [shared/skills/agent-plugins/.agents/agents/reidbaker-agent/skills/api-review/SKILL.md](shared/skills/agent-plugins/.agents/agents/reidbaker-agent/skills/api-review/SKILL.md) |
@@ -425,11 +425,11 @@
 
 <a id="skills-security"></a>
 
-### Security / Privacy (15 ไฟล์)
+### Security / Privacy (15 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
-| iot-security-reviewer-rghamilton3-dotfiles | ดูรายละเอียดและวิธีใช้ใน SKILL.md | [shared/skills/iot-security-reviewer-rghamilton3-dotfiles/SKILL.md](shared/skills/iot-security-reviewer-rghamilton3-dotfiles/SKILL.md) |
+| iot-security-reviewer-rghamilton3-dotfiles | See SKILL.md for details and usage instructions. | [shared/skills/iot-security-reviewer-rghamilton3-dotfiles/SKILL.md](shared/skills/iot-security-reviewer-rghamilton3-dotfiles/SKILL.md) |
 | auth-assessment | Assess mobile app authentication and authorization mechanisms against MASVS-AUTH controls and MASTG tests. Use when reviewing login flows, biometric auth, session management, MFA implementation, or access control in Android or iOS apps. | [shared/skills/mobile-security-skills/skills/auth-assessment/SKILL.md](shared/skills/mobile-security-skills/skills/auth-assessment/SKILL.md) |
 | code-quality-scan | Scan mobile app code quality and security against MASVS-CODE controls and MASTG tests. Use when checking for vulnerable dependencies, input validation issues, injection flaws, outdated platform requirements, or third-party library risks in Android or iOS apps. | [shared/skills/mobile-security-skills/skills/code-quality-scan/SKILL.md](shared/skills/mobile-security-skills/skills/code-quality-scan/SKILL.md) |
 | crypto-review | Review mobile app cryptographic implementations against MASVS-CRYPTO controls and MASTG tests. Use when auditing encryption, key management, hashing, random number generation, or cryptographic protocol usage in Android or iOS apps. | [shared/skills/mobile-security-skills/skills/crypto-review/SKILL.md](shared/skills/mobile-security-skills/skills/crypto-review/SKILL.md) |
@@ -447,9 +447,9 @@
 
 <a id="skills-iot"></a>
 
-### Embedded / ESP32 / IoT / MQTT (7 ไฟล์)
+### Embedded / ESP32 / IoT / MQTT (7 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | esp32-arduino-development | ESP32 Arduino框架完整开发指南。涵盖Arduino CLI工具链配置、ESP32项目编译、 固件烧录、串口调试等全流程。适用于ESP32-WROOM-32等常见开发板，解决环境配置、 库依赖管理、上传失败、串口通信等常见问题。支持Windows/Linux/macOS跨平台开发。 | [shared/skills/esp32-arduino-development/SKILL.md](shared/skills/esp32-arduino-development/SKILL.md) |
 | esp32-development | Build, configure, flash, test, debug, and recover firmware for ESP32-family boards, including ESP-IDF C/C++, Arduino/PlatformIO, MicroPython, CircuitPython, ESPHome, Zephyr, Rust, and NuttX. Use when identifying an ESP32 board, choosing a framework, wiring GPIO or peripheral buses, integrating sensors or actuators, diagnosing serial/boot/power/network failures, planning OTA and production security, or automating hardware tests and fault injection. Do not use as a substitute for the exact board schematic, SoC datasheet, or attached component datasheet. | [shared/skills/esp32-development/SKILL.md](shared/skills/esp32-development/SKILL.md) |
@@ -461,9 +461,9 @@
 
 <a id="skills-architecture"></a>
 
-### สถาปัตยกรรมอาคาร / วิศวกรรม / BIM (35 ไฟล์)
+### Building Architecture / Engineering / BIM (35 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | accessibility-design | Comprehensive accessibility and universal design expertise covering ADA/ABA Accessibility Standards, universal design principles (Ron Mace's 7 principles), inclusive environment design, accessible route requirements, dimensional standards for wheelchair access, ramps, stairs, elevators, sanitary facilities, sensory accessibility (visual and hearing impairment), neurodiversity-informed design, aging in place, and international code comparison across ADA (US), Equality Act/BS 8300 (UK), DIN 18040 (Germany), AS 1428 (Australia), and NBC (India). | [shared/skills/architecture-architect-skills/accessibility-design/SKILL.md](shared/skills/architecture-architect-skills/accessibility-design/SKILL.md) |
 | acoustic-design | Acoustic design for buildings: sound insulation between spaces (airborne and impact), room acoustics and reverberation control, environmental noise intrusion, noise and vibration from building services, and acoustic design strategies for residential, commercial, educational, healthcare, performance, and worship building types. | [shared/skills/architecture-architect-skills/acoustic-design/SKILL.md](shared/skills/architecture-architect-skills/acoustic-design/SKILL.md) |
@@ -497,15 +497,15 @@
 | archlang | Use when the user wants to create, edit, or inspect an architectural floor plan / building layout as code — e.g. "draw a 2-bedroom apartment", "add a bathroom to this plan", "make the bedroom 1 m wider", "lay out an office floor". ArchLang is a tiny text language that compiles a .arch file to a professional floor-plan drawing (SVG/PNG/PDF/DXF). Drive it entirely through the `arch` CLI; do not hand-render. | [shared/skills/architecture-archlang/SKILL.md](shared/skills/architecture-archlang/SKILL.md) |
 | Architecture | Support architectural understanding from home projects to professional practice and theory. | [shared/skills/architecture-core/SKILL.md](shared/skills/architecture-core/SKILL.md) |
 | architecture-diagram | This skill should be used when a system design needs a diagram — "draw the architecture", "diagram this system", "show the components", "make an architecture/infrastructure/topology diagram", or visualizing boxes-and-arrows, data flow, regions, or failure paths for a design. It generates a self-contained dark-theme HTML + SVG diagram (with PNG/PDF export). Use it whenever the `system-design` orchestrator or a building block reaches the "draw it" step, even if the user doesn't say "diagram". | [shared/skills/architecture-diagram/SKILL.md](shared/skills/architecture-diagram/SKILL.md) |
-| architecture-engineering | Professional architecture, civil, structural, geotechnical, MEP, fire-safety and construction-engineering reasoning for buildings, with a Thailand focus. Use when designing, planning, reviewing, renovating or estimating any building (houses, apartments, dormitories, shophouses, offices, cafes, restaurants, laundromats, warehouses), or when deciding foundations, structural systems, plumbing/drainage, electrical, HVAC, fire safety, materials or construction sequencing. Also trigger on Thai requests such as ออกแบบอาคาร, โครงสร้าง, ฐานราก, เสาเข็ม, ระบบประปา, ระบบไฟฟ้า, ระบายอากาศ, ตรวจแบบ, ลำดับการก่อสร้าง, ถอดปริมาณ. Knowledge only: this is NOT a SketchUp/Revit/CAD/coding skill; tool integration (BuildFlow, SketchUp, BIM) happens afterwards using the conclusions produced here. | [shared/skills/architecture-engineering/SKILL.md](shared/skills/architecture-engineering/SKILL.md) |
+| architecture-engineering | Professional architecture, civil, structural, geotechnical, MEP, fire-safety and construction-engineering reasoning for buildings, with a Thailand focus. Use when designing, planning, reviewing, renovating or estimating any building (houses, apartments, dormitories, shophouses, offices, cafes, restaurants, laundromats, warehouses), or when deciding foundations, structural systems, plumbing/drainage, electrical, HVAC, fire safety, materials or construction sequencing. Also responds to Thai-language requests about building design, structures, foundations, piles, plumbing, electrical systems, ventilation, design reviews, construction sequencing, and quantity takeoffs. Knowledge only: this is NOT a SketchUp/Revit/CAD/coding skill; tool integration (BuildFlow, SketchUp, BIM) happens afterwards using the conclusions produced here. | [shared/skills/architecture-engineering/SKILL.md](shared/skills/architecture-engineering/SKILL.md) |
 | arch-render | Create, improve, review, and present architectural still imagery while preserving the supplied design. Use for architectural render prompts, direct photorealistic rendering, material or lighting edits, style-reference matching, image enhancement, consistent render sets, design critique, presentation boards, architectural portfolios, typology guidance, and architect-level coordination advice. Accept sketches, plans, elevations, sections, physical models, photos, and screenshots from SketchUp, Revit, Rhino, D5, Lumion, Enscape, Blender, V-Ray, or similar tools. Produce all user-facing instructions, workflows, prompts, and deliverables in English. Do not use for video, non-architectural graphics, certified compliance, engineering calculations, legal advice, or direct BIM/CAD authoring. | [shared/skills/architecture-render/SKILL.md](shared/skills/architecture-render/SKILL.md) |
 | revit-bim | Revit BIM expertise for all building professionals. Use when the user asks to design a building, create walls, add floors, place columns, route MEP systems, create structural framing, add dimensions, tag elements, create sheets, export drawings, query the model, analyze statistics, get material quantities, or any task involving Autodesk Revit, building information modeling, architectural design, structural engineering, MEP engineering, or construction documentation. | [shared/skills/architecture-revit-bim/SKILL.md](shared/skills/architecture-revit-bim/SKILL.md) |
 
 <a id="skills-analytics"></a>
 
-### วิเคราะห์ข้อมูล / Dashboard / สถิติ (34 ไฟล์)
+### Data Analysis / Dashboards / Statistics (34 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | dashboard-designer | Use this skill when designing a data dashboard—choosing KPIs, structuring layout, applying visual hierarchy, or deciding which BI tool to use. Trigger phrases: ''design a dashboard'', ''build a KPI dashboard'', ''what should my dashboard show'', ''help me layout a dashboard'', ''dashboard for monitoring''. Not for building chart code from scratch (use chart-builder), writing SQL queries (use sql-analyst), or designing marketing landing pages. | [shared/skills/dashboard-designer/SKILL.md](shared/skills/dashboard-designer/SKILL.md) |
 | data-quality-audit | Comprehensive data quality assessment against business rules, schema constraints, and freshness expectations. Activate when validating data pipeline outputs before production use, auditing a dataset against defined business rules, or producing a quality scorecard for a data asset. | [shared/skills/data-analytics-skills/01-data-quality-validation/data-quality-audit/SKILL.md](shared/skills/data-analytics-skills/01-data-quality-validation/data-quality-audit/SKILL.md) |
@@ -544,9 +544,9 @@
 
 <a id="skills-documents"></a>
 
-### เอกสาร / PDF / Excel / Slides / Templates (29 ไฟล์)
+### Documents / PDF / Excel / Slides / Templates (29 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | template-creator | Create or update a reusable personal Codex artifact-template skill. Use when the user invokes $template-creator or asks in natural language to create a reusable template from a reference document, presentation, spreadsheet, ImageGen or Product Design image, email, or Slack message, or explicitly asks to edit or update a passed artifact-template skill. Do not use for one-off creation from an existing template. | [shared/skills/agent-artifact-template-creator/SKILL.md](shared/skills/agent-artifact-template-creator/SKILL.md) |
 | code-documentation | Guide for writing effective code documentation, including docstrings, JSDoc, dartdoc, and implementation comments. Use this skill when writing new code, adding features, or improving existing documentation in Dart, Python, or TypeScript to ensure clarity and maintainability. | [shared/skills/agent-plugins/.agents/agents/reidbaker-agent/skills/code-documentation/SKILL.md](shared/skills/agent-plugins/.agents/agents/reidbaker-agent/skills/code-documentation/SKILL.md) |
@@ -580,9 +580,9 @@
 
 <a id="skills-media"></a>
 
-### ภาพ / วิดีโอ / กราฟิก (10 ไฟล์)
+### Images / Video / Graphics (10 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | imagegen | Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas. | [shared/skills/.system/imagegen/SKILL.md](shared/skills/.system/imagegen/SKILL.md) |
 | install-capcut-plugin | Install, reinstall, or update the CapCut Codex plugin from its hosted bundle on macOS or Windows, then guide account authorization. | [shared/skills/capcut-codex-plugin/SKILL.md](shared/skills/capcut-codex-plugin/SKILL.md) |
@@ -597,22 +597,22 @@
 
 <a id="skills-commerce"></a>
 
-### ธุรกิจ / Commerce / Payments (6 ไฟล์)
+### Business / Commerce / Payments (6 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | cycle-counting | When the user wants to implement or optimize cycle counting programs, improve inventory accuracy, or design physical inventory processes. Also use when the user mentions "inventory accuracy," "physical inventory," "stock counting," "ABC cycle counting," "perpetual inventory," "inventory reconciliation," or "variance analysis." For inventory optimization, see inventory-optimization. For warehouse operations, see warehouse-design. | [shared/skills/commerce-cycle-counting/SKILL.md](shared/skills/commerce-cycle-counting/SKILL.md) |
 | inventory-optimization | When the user wants to optimize inventory levels, calculate safety stock, determine reorder points, or minimize inventory costs. Also use when the user mentions "inventory management," "safety stock," "EOQ," "reorder point," "service level," "stockout prevention," "ABC analysis," "inventory turns," or "working capital reduction." For warehouse slotting, see warehouse-slotting-optimization. For multi-echelon systems, see multi-echelon-inventory. | [shared/skills/commerce-inventory-optimization/SKILL.md](shared/skills/commerce-inventory-optimization/SKILL.md) |
 | payments | Stripe payments integration guidance — native Vercel Marketplace setup, checkout sessions, webhook handling, subscription billing, and the Stripe SDK. Use when implementing payments, subscriptions, or processing transactions. | [shared/skills/commerce-payments/SKILL.md](shared/skills/commerce-payments/SKILL.md) |
 | replenishment-strategy | When the user wants to design or optimize replenishment strategies, determine replenishment policies, or improve inventory flow between locations. Also use when the user mentions "inventory replenishment," "stock replenishment," "min-max inventory," "DRP," "auto-replenishment," "vendor-managed inventory," "forward pick replenishment," or "retail store replenishment." For safety stock calculations, see inventory-optimization. For multi-echelon networks, see multi-echelon-inventory. | [shared/skills/commerce-replenishment-strategy/SKILL.md](shared/skills/commerce-replenishment-strategy/SKILL.md) |
-| shopee-affiliate-product-research | ค้นหา ตรวจสอบ ให้คะแนน และบันทึกสินค้า Shopee Affiliate สำหรับส่งต่อให้ AI ทำสคริปต์ ภาพ และวิดีโอ โดยอิงหลักฐานจากหน้าสินค้าจริงและแหล่งกระแสภายนอก | [shared/skills/shopee-affiliate-product-research/SKILL.md](shared/skills/shopee-affiliate-product-research/SKILL.md) |
+| shopee-affiliate-product-research | Find, verify, score, and record Shopee Affiliate products for AI-assisted script, image, and video creation, using evidence from actual product pages and external trend sources. | [shared/skills/shopee-affiliate-product-research/SKILL.md](shared/skills/shopee-affiliate-product-research/SKILL.md) |
 | stripe-best-practices | Best practices for building Stripe integrations. Use when implementing payment processing, checkout flows, subscriptions, webhooks, Connect platforms, or any Stripe API integration. | [shared/skills/tradecraft/skills/stripe-best-practices/SKILL.md](shared/skills/tradecraft/skills/stripe-best-practices/SKILL.md) |
 
 <a id="skills-tools"></a>
 
-### Git / GitHub / Browser / เครื่องมือทำงาน (23 ไฟล์)
+### Git / GitHub / Browser / Productivity Tools (23 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | agent-browser-verify | Automated browser verification for dev servers. Triggers when a dev server starts to run a visual gut-check with agent-browser — verifies the page loads, checks for console errors, validates key UI elements, and reports pass/fail before continuing. | [shared/skills/agent-browser-verify/SKILL.md](shared/skills/agent-browser-verify/SKILL.md) |
 | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, verify dev server output, test web apps, navigate pages, fill forms, click buttons, take screenshots, extract data, or automate any browser task. Also triggers when a dev server starts so you can verify it visually. | [shared/skills/agent-browser/SKILL.md](shared/skills/agent-browser/SKILL.md) |
@@ -640,9 +640,9 @@
 
 <a id="skills-skills-plugins"></a>
 
-### สร้างและจัดการ Skills / Plugins / Workflows (26 ไฟล์)
+### Skill and Plugin Development / Management / Workflows (26 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | plugin-creator | Create and scaffold plugin directories for Codex with a required `.codex-plugin/plugin.json`, optional plugin folders/files, valid manifest defaults, and personal-marketplace entries by default. Use when Codex needs to create a new personal plugin, add optional plugin structure, generate or update marketplace entries for plugin ordering and availability metadata, or update an existing local plugin during development with the CLI-driven cachebuster and reinstall flow. | [shared/skills/.system/plugin-creator/SKILL.md](shared/skills/.system/plugin-creator/SKILL.md) |
 | skill-creator | Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations. | [shared/skills/.system/skill-creator/SKILL.md](shared/skills/.system/skill-creator/SKILL.md) |
@@ -673,9 +673,9 @@
 
 <a id="skills-trading"></a>
 
-### การเทรด / ตลาด / กลยุทธ์ / ความเสี่ยง (108 ไฟล์)
+### Trading / Markets / Strategies / Risk (108 Files)
 
-| Skill | คำอธิบาย | ไฟล์ |
+| Skill | Description | File |
 | --- | --- | --- |
 | ai-signal-aggregator | ML-powered signal aggregation across ALL strategy skills — combines signals from every strategy using weighted voting, random forest meta-learner, and confidence calibration. THE MASTER SIGNAL COMBINER. Use for "combine all signals", "aggregate strategies", "meta strategy", "AI signal", "ensemble signal", "which signal to follow", "best signal now", "combine everything", "master signal", "AI recommendation", or any request to synthesize signals from multiple skills. This is the intelligence layer ABOVE trading-brain. | [shared/skills/tradecraft/skills/ai-signal-aggregator/SKILL.md](shared/skills/tradecraft/skills/ai-signal-aggregator/SKILL.md) |
 | ai-trading-crew | AI Trading Crew — 50-agent AutoGen system for US stock analysis. 8 specialized teams (Technical, Fundamental, Macro, Sentiment, Quant, Risk, Execution, Strategy) reporting to a Head Coach supervisor. Risk team has veto power. Devil's Advocate agent f | [shared/skills/tradecraft/skills/ai-trading-crew/SKILL.md](shared/skills/tradecraft/skills/ai-trading-crew/SKILL.md) |
