@@ -5,12 +5,11 @@ A collection of AI skills for Codex, Gemini, and other AI tools. Open a SKILL.md
 ## Repository Structure
 
 - `shared/skills/` — Central library containing all skills, including nested skills and examples.
-- `codex/` — Codex configuration and other plugin files. Duplicate skills have been removed in favor of the shared library.
-- `gemini/` — Other Gemini plugin files. Duplicate skills have been removed in favor of the shared library.
+- `plugins/` — Consolidated plugin manifests, agents, and supporting files. Skills are maintained separately in the shared library.
 
 Contains **553 SKILL.md files** as of November 13, 2026. This count includes all locations within shared, including nested skills and examples. Descriptions are based on the individual skill files.
 
-The 96 duplicate skill folders in codex and 96 in gemini have been removed. All original skills and supporting files remain in shared. The skill lists in the platform plugin manifests are empty; browse shared/skills using the catalog below.
+Plugins previously stored under codex and gemini are consolidated in plugins. Duplicate skills are maintained in shared only. The skill lists in the plugin manifests are empty; browse shared/skills using the catalog below. Local plugin caches and runtimes are excluded from version control.
 
 | Directory | Count |
 | --- | ---: |

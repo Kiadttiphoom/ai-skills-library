@@ -4,9 +4,9 @@ Thumbs.db
 desktop.ini
 
 # Executables & Binary Runtimes (ไม่ต้องก๊อบ .exe เพราะ Codex App เครื่องใหม่จะโหลดให้อัตโนมัติ)
-codex/plugins/.plugin-appserver/
-codex/plugins/.remote-plugin-install-staging/
-codex/plugins/cache/
+plugins/.plugin-appserver/
+plugins/.remote-plugin-install-staging/
+plugins/cache/
 
 # Temporary & Log files
 *.tmp
